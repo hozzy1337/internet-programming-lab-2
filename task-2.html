@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isFind(a, b) {
+        var arr = [];
+    nextPrime:
+    for (var i = a; i <= b; i++) {
+
+        for (var j = a; j < i; j++) {
+            if (i % j == 0) continue nextPrime;
+            arr.push(i);
+        }
+
+        console.log( i ); // простое
+    }
+    return arr;
+    }
+</script>
+</body>
+</html>
